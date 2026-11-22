@@ -6,6 +6,16 @@ Evolução do exemplo [MPComm do professor](https://github.com/professorfabio/MP
 
 > **Importante:** o projeto do professor chama de *multicast* o envio de uma mensagem a cada participante via `socket.sendto` (fan-out UDP). Esta versão **preserva essa estratégia**, em vez de empregar grupos multicast IP. RPC foi aplicado **apenas ao plano de controle cliente-servidor**, não à troca de mensagens entre peers.
 
+## Integrantes do grupo
+
+**Universidade Federal de Goiás (UFG)** — Ciência da Computacao — Sistemas Distribuidos (2026/2).
+
+| Integrante | Matrícula |
+| --- | --- |
+| Islabelle Vitoria Mendonca Bastos | 202306973 |
+| Felipe Sucupira de Oliveira | 202301439 |
+| Sebastião Correa Fraga Neto | 202301487 |
+
 ## 1. Como executar em poucos passos (Windows)
 
 **Requisitos:** Python 3.9+ (recomendado 3.11 ou superior), sem dependências externas. Na pasta raiz do projeto, tanto no Windows quanto no Linux/macOS:

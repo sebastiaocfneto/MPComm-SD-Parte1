@@ -1,4 +1,11 @@
 # Roteiro sugerido — vídeo da entrega Parte 1
+## Equipe
+
+- Islabelle Vitoria Mendonca Bastos — 202306973
+- Felipe Sucupira de Oliveira — 202301439
+- Sebastião Correa Fraga Neto — 202301487
+
+Os papéis "Integrante 1", "Integrante 2" e "Integrante 3" abaixo são sugestões. A divisão das falas ainda será definida pelo grupo; a gravação não foi confirmada.
 
 **Objetivo:** demonstração curta e verificável, com participação dos três integrantes. O enunciado não fixa duração, então o grupo pode ajustar a fala.
 
