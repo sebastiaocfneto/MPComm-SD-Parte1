@@ -213,16 +213,6 @@ Para implantar em VMs ou hosts distintos:
 - O teste automatizado é em **localhost**; não comprova desempenho ou escalabilidade em redes de múltiplas regiões.
 - O programa não deve ser tratado como middleware de produção.
 
-## 8. Sugestão de roteiro para o vídeo (os 3 integrantes)
-
-**Integrante 1 — contexto e Parte 1A:** apresentar o problema do MPComm original, arquitetura e chamadas RPC. Abrir `GroupMngr.py`, `comparisonServer.py`, `rpc_utils.py`. Explicar por que XML-RPC sobre HTTP usa TCP **por baixo**, mas evita sockets TCP manuais.
-
-**Integrante 2 — Parte 1B:** apresentar `reliable_multicast.py`, `next_seq`, `holdback`, `ACK` e retransmissões. Mostrar o caso de chegada `[2, 0, 1]` e por que só `[0, 1, 2]` é entregue.
-
-**Integrante 3 — demonstração:** executar `python demo_local.py` e `python -m unittest discover -s tests -v`. Mostrar `fifo_valid=True`, `complete=True`, retransmissões positivas e abrir um arquivo `logs/round_<id>.json`. Encerrar esclarecendo que **diferenças de ordem global são esperadas** neste estágio.
-
-Para a plataforma da disciplina, enviem a **URL do repositório do grupo**, verifiquem o **horário do último commit** e forneçam o **link do vídeo** segundo as regras acordadas entre vocês. Para as próximas partes, o enunciado pede **novos repositórios**; não acrescentar Partes 2–4 a este repositório de entrega sem orientação do professor.
-
-## 9. Evidência de execução já registrada
+## 8. Evidência de execução já registrada
 
 A pasta `evidencias/` inclui um relatório JSON **real** de uma rodada local com **6 peers × 25 mensagens**, perdas artificiais de DATA/ACK, **150 mensagens em cada log**, **630 retransmissões**, `fifo_valid=true`, `complete=true` e **144 posições com diferenças entre logs**. Este último número é de ordem global, **não** de violações de FIFO. Os resultados podem variar em outras execuções.
