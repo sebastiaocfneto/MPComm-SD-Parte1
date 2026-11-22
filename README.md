@@ -4,7 +4,7 @@ Evolução do exemplo [MPComm do professor](https://github.com/professorfabio/MP
 
 **Escopo implementado:** (a) cliente-servidor por RPC e (b) multicast entre peers por sockets UDP com recuperação de perdas e ordenação **FIFO por emissor**. Não implementa a aplicação da Parte 2, ordenação total da Parte 3 nem o protocolo da Parte 4.
 
-> **Importante:** o projeto do professor chama de *multicast* o envio de uma mensagem a cada participante via `socket.sendto` (fan-out UDP). Esta versão **preserva essa estratégia**, em vez de empregar grupos multicast IP. RPC foi aplicado **apenas ao plano de controle cliente-servidor**, não à troca de mensagens entre peers.
+> **Importante:** o projeto base chama de *multicast* o envio de uma mensagem a cada participante via `socket.sendto` (fan-out UDP). Esta versão **preserva essa estratégia**, em vez de empregar grupos multicast IP. RPC foi aplicado **apenas ao plano de controle cliente-servidor**, não à troca de mensagens entre peers.
 
 ## Integrantes do grupo
 
